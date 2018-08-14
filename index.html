@@ -17,31 +17,45 @@
 	</div>
 
 	<div class="container">
-		<!-- Row for word guess -->
+		<!-- Row for word guess3 -->
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="wordHolder">
-				<h2>_ _ _ _ _ _ _ _ _ _ _</h2>
-			</div>
+					<h2>
+						Guess the Feminist!
+						<br><br>
+						<span id="place-holder">___ _____ ______</span>
+					</h2>
+				</div>
 			</div>
 		</div>
 		<!-- Row with 2 columns for game -->
 		<div class="row">
 			<!-- For images -->
 			<div class="col-lg-6">
-				<img src="./assets/images/guess_image.png" alt="Guess Image" class="img-fluid">
+				<img src="./assets/images/guess_image.png" alt="Guess Image" class="img-fluid" id="winner-image">
 			</div>
 			<!-- Instructions & game play -->
 			<div class="col-lg-6">
-				<h2>Press any key to take charge</h2>
-				<p>Wins</p>
-				<p>Number of guesses remaining</p>
+				<button id="new-game-button" class="btn btn-dark" style="text-align: center;">Start a New Game</button>
+				<p>Wins: 
+					<span id="win-count"></span>
+				</p>
+				<p>Number of guesses remaining: 
+					<span id="guesses-left"></span>
+				</p>
 				<p>Letters already guessed</p>
-				</div>
+				<p>
+					<span id="guessed-letters"></span>
+				</p>
 			</div>
 		</div>
 	</div>
 	</div>
+	</div>
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<script src="./assets/javascript/game.js"></script>
 
 </body>
 
