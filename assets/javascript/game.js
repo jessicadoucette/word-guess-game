@@ -12,6 +12,7 @@ var words = [
 ];
 
 var wins = 0;
+var losses = 0; 
 var guessesLeft = 10;
 var gameRunning = false;
 var pickedWord = ''; 
@@ -100,7 +101,15 @@ function newGame () {
 		//write new amount of guesses left to DOM
 		$guessesLeft.textContent = guessesLeft; 
 		}
-	
+		checkLoss();
+	}
+
+	function checkLoss() {
+		if (guessesLeft === 0) {
+			losses++; 
+			gameRunning = false;
+		}
+		checkWin();
 	}
 
 
@@ -110,7 +119,14 @@ function newGame () {
 		{
 			wins++; 
 			gameRunning = false;
-			$wins.textContent = wins;  
+			$winCount.textContent = wins;  
+		}
+		else {
+			if (guessesLeft === 0) {
+				console.log("you lose");
+				alert("out of guesses");
+				newGame();
+			}
 		}
 	}
 	

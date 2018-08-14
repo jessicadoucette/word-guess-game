@@ -21,14 +21,13 @@
 
 7. Next function, I check for incorrect letters using push and .textcontent
 
-8. Next function is checking to see if I won. I could not get this to work! Want to learn where I went wrong on this. 
+8. Next function is checking to see if I won. Huge thanks to @Brady, he showed me how I needed an else function and a new game reset to reset the game. 
 
 9. Lastly, I have an event listener for the New Game button and my onkeyup function so the browser can read the key clicks. The if statement was created so only A-Z characters can be entered.
 
 
 <H2>What I want to learn (why I signed up for a tutor)</H2>
 1. How to switch out the guess image with the feminst icon word
-2. Where I went wrong with the checkWin
 
 
 
